@@ -87,7 +87,7 @@ spec:
     - protocol: TCP
       port: 2000
       targetPort: 2000
-      nodePort: 30072        # Option2300033794/2300033794_lab_backend:latestal fixed NodePort (range 30000–32767)
+      nodePort: 30073        # Option2300033794/2300033794_lab_backend:latestal fixed NodePort (range 30000–32767)
   type: NodePort
 ---
 # ===========================
@@ -115,7 +115,7 @@ spec:
             - containerPort: 80
           # env:
           #   - name: VITE_API_URL
-          #     value: "http://localhost:30072"  # Points to backend NodePort
+          #     value: "http://localhost:30073"  # Points to backend NodePort
 ---
 apiVersion: v1
 kind: Service
